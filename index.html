@@ -1,0 +1,308 @@
+ANT
+
+CHEAP
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hirvana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes glow {
+        0%,
+        100% {
+          text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 20px #3b82f6;
+        }
+        50% {
+          text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa, 0 0 30px #60a5fa;
+        }
+      }
+      .animate-glow {
+        animation: glow 2s infinite;
+      }
+      @keyframes spin-slow {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 4s linear infinite;
+      }
+      /* Sticky Navbar */
+      nav.sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: #0a0a23cc; /* slight transparency */
+        backdrop-filter: saturate(180%) blur(10px);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#0A0A23] to-[#1B1B3A] text-white">
+    <!-- Navbar (Sticky) -->
+    <nav class="sticky-nav flex justify-between items-center p-6 max-w-7xl mx-auto">
+      <div class="text-2xl font-bold">HIRVANA</div>
+      <div class="space-x-6 hidden md:flex">
+        <button class="hover:text-blue-400">Learn</button>
+        <button class="hover:text-blue-400">Product</button>
+        <button class="hover:text-blue-400">Community</button>
+      </div>
+      <button
+        class="bg-[#2563EB] text-white px-4 py-2 rounded-full hover:bg-blue-700"
+      >
+        Register
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-24 px-4">
+      <div class="mb-4">
+        <span
+          class="text-sm px-4 py-2 rounded-full border border-blue-400 bg-blue-900/20 text-blue-300 shadow-lg animate-glow"
+        >
+          Reach your career nirvana
+        </span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Your AI-Powered <br />
+        Career Wingman
+      </h1>
+      <p class="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
+        Let AI and real mentors do the heavy lifting. From resumes to
+        interviews, we’ve got your back.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <button
+          class="bg-[#2563EB] text-white px-6 py-3 rounded-md hover:bg-blue-700"
+        >
+          Register Now
+        </button>
+        <button
+          class="bg-blue-900/40 text-blue-300 px-6 py-3 rounded-md border border-blue-600 hover:bg-blue-800/40"
+        >
+          About us
+        </button>
+      </div>
+    </section>
+
+    <!-- Radar & Features -->
+    <section class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 px-4 py-16">
+      <!-- Radar with cleaner design -->
+      <div class="bg-[#0A0A23] rounded-xl p-6 border border-blue-900">
+        <div class="relative w-full h-64 flex items-center justify-center">
+          <div
+            class="absolute w-48 h-48 rounded-full border border-blue-500 opacity-20"
+          ></div>
+          <div
+            class="absolute w-36 h-36 rounded-full border border-blue-500 opacity-20"
+          ></div>
+          <div
+            class="absolute w-24 h-24 rounded-full border border-blue-500 opacity-20"
+          ></div>
+          <div
+            class="absolute w-px h-48 bg-blue-500 opacity-10 rotate-45"
+          ></div>
+          <div
+            class="absolute w-px h-48 bg-blue-500 opacity-10 rotate-90"
+          ></div>
+          <div
+            class="absolute w-px h-48 bg-blue-500 opacity-10 -rotate-45"
+          ></div>
+          <div
+            class="absolute w-48 h-48 rounded-full animate-spin-slow border-t-2 border-blue-400/50"
+          ></div>
+          <div class="w-2 h-2 bg-blue-500 rounded-full z-10"></div>
+        </div>
+        <h2 class="text-2xl font-semibold mt-6 mb-2">
+          ⚙️ AI: Personal Job Scanner
+        </h2>
+        <p class="text-gray-400">
+          A smart AI agent that personalizes your journey, helps you in bagging
+          that offer and applies on your behalf (from resume edits to interview
+          prep)
+        </p>
+      </div>
+
+      <!-- Smart Apply Tags -->
+      <div class="col-span-2 grid gap-6">
+        <div
+          class="bg-gradient-to-tr from-[#0F172A] to-[#1E293B] p-6 rounded-xl"
+        >
+          <h3 class="text-xl font-semibold mb-2">
+            🎯 Apply Smart. Interview Sharp. Land Faster.
+          </h3>
+          <p class="text-gray-400 mb-4">
+            Streamlining everything for your swift success
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Automation</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Tailored Roadmap</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Success</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm">Career</span>
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Empowerment</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Safe Space</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Confidence</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Progress</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Mentorship</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm">AI</span>
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Guidance</span
+            >
+            <span class="bg-black/30 px-2 py-1 rounded-md text-sm"
+              >Job Search</span
+            >
+          </div>
+        </div>
+
+        <!-- Invite only -->
+        <div
+          class="bg-gradient-to-br from-[#0F172A] to-[#1E293B] p-6 rounded-xl"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            💼✨ Job Hunt? Nah, We Job Hack.
+          </h3>
+          <p class="text-gray-400 mb-4">
+            Tailored support to give you proper guided progress
+          </p>
+          <button class="bg-black/30 text-white px-4 py-2 rounded-md">
+            Invite only for now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship & CTA -->
+    <section class="max-w-7xl mx-auto px-4 py-8">
+      <div
+        class="bg-gradient-to-r from-[#0F172A] to-[#1E293B] rounded-xl p-6 flex items-center justify-between"
+      >
+        <div>
+          <h3 class="text-xl font-semibold mb-2">🎤 Mentorship Programs</h3>
+          <p class="text-gray-400">
+            Join our Community, We are waiting for you
+          </p>
+        </div>
+        <span class="bg-black/30 px-4 py-2 rounded-full text-sm"
+          >👥 50/100 participants</span
+        >
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">🌟 Success Stories</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-[#0F172A] p-6 rounded-xl border border-blue-900 shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">Sarah's Journey</h3>
+          <p class="text-gray-400">
+            “With Hirvana’s AI agent and mentors, I landed my dream job in half
+            the time.”
+          </p>
+        </div>
+        <div
+          class="bg-[#0F172A] p-6 rounded-xl border border-blue-900 shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">Raj's Success</h3>
+          <p class="text-gray-400">
+            “The tailored roadmap kept me focused. I nailed my interviews
+            confidently.”
+          </p>
+        </div>
+        <div
+          class="bg-[#0F172A] p-6 rounded-xl border border-blue-900 shadow-lg"
+        >
+          <h3 class="text-xl font-semibold mb-2">Anita's Experience</h3>
+          <p class="text-gray-400">
+            “Mentorship and AI together? A game changer for my career.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section
+      class="max-w-7xl mx-auto px-4 py-16 bg-[#0A0A23] rounded-xl border border-blue-900"
+    >
+      <h2 class="text-3xl font-bold mb-8 text-center">❓ Frequently Asked Questions</h2>
+      <div class="space-y-4 max-w-3xl mx-auto">
+        <button
+          class="faq-question w-full text-left px-4 py-3 bg-blue-900 rounded-md flex justify-between items-center"
+        >
+          <span>What is Hirvana?</span>
+          <span class="rotate-0 transition-transform duration-300">&#x25BC;</span>
+        </button>
+        <div class="faq-answer hidden px-4 py-3 text-gray-300 bg-blue-800 rounded-b-md">
+          Hirvana is your AI-powered career wingman, helping you with resume
+          building, job applications, interview prep, and mentorship.
+        </div>
+
+        <button
+          class="faq-question w-full text-left px-4 py-3 bg-blue-900 rounded-md flex justify-between items-center"
+        >
+          <span>How does the AI agent help me?</span>
+          <span class="rotate-0 transition-transform duration-300">&#x25BC;</span>
+        </button>
+        <div class="faq-answer hidden px-4 py-3 text-gray-300 bg-blue-800 rounded-b-md">
+          The AI agent personalizes your job search, edits your resume per job
+          requirements, and even applies on your behalf.
+        </div>
+
+        <button
+          class="faq-question w-full text-left px-4 py-3 bg-blue-900 rounded-md flex justify-between items-center"
+        >
+          <span>Is mentorship included?</span>
+          <span class="rotate-0 transition-transform duration-300">&#x25BC;</span>
+        </button>
+        <div class="faq-answer hidden px-4 py-3 text-gray-300 bg-blue-800 rounded-b-md">
+          Yes, we provide invite-only mentorship programs with real industry
+          mentors to guide you throughout your journey.
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // FAQ toggle functionality
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          const arrow = question.querySelector("span:last-child");
+          if (answer.classList.contains("hidden")) {
+            answer.classList.remove("hidden");
+            arrow.style.transform = "rotate(180deg)";
+          } else {
+            answer.classList.add("hidden");
+            arrow.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
